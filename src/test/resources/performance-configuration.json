@@ -1,0 +1,258 @@
+{
+  "status": "COMPLETED",
+  "data": {
+    "hasDetailedInfo": true,
+    "serialConfigurationSummary": {
+      "scriptCompilationTime": 201321,
+      "pluginBuildingTime": 24849,
+      "modelConfigurationTime": 193261,
+      "taskGraphCalculationTime": 231,
+      "configurationCachingTime": 340,
+      "configurationResolutionTime": 17766,
+      "totalConfigurationTime": 437768
+    },
+    "scriptCompilationDetails": {
+      "totalScripts": 355,
+      "totalCompiledScripts": 355,
+      "scriptCompilations": [
+        {
+          "type": "other_script",
+          "label": null,
+          "displayName": "settings.gradle.kts",
+          "tooltip": null,
+          "duration": 7772
+        },
+        {
+          "type": "project_script",
+          "label": null,
+          "displayName": "app/app/build.gradle.kts",
+          "tooltip": null,
+          "duration": 3184
+        }
+      ]
+    },
+    "configurationCaching": {
+      "dependencyResolution": null,
+      "store": {
+        "duration": 176,
+        "hasFailed": false
+      },
+      "load": {
+        "duration": 164,
+        "originBuildInvocationId": null,
+        "hasFailed": false
+      },
+      "formattedSize": "209.5 KiB",
+      "outcome": "miss",
+      "invalidationReason": "no cached configuration was available"
+    },
+    "taskTotals": {
+      "total": 80590,
+      "createdImmediately": 0,
+      "createdDuringConfiguration": 355,
+      "createdDuringTaskExecution": 0,
+      "notCreated": 80229,
+      "createdDuringTaskGraphCalculation": 6
+    },
+    "codeUnitApplications": [
+      {
+        "type": "other_script",
+        "label": null,
+        "displayName": "settings.gradle.kts",
+        "tooltip": null,
+        "targetPath": ":",
+        "number": null,
+        "ownTime": 10470,
+        "totalTime": 38484,
+        "stack": [
+          0
+        ],
+        "applies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          35,
+          36,
+          37
+        ],
+        "earlyTasksCount": 0,
+        "tasks": [],
+        "contributors": [
+          {
+            "ownApplication": true,
+            "registrationPoint": null,
+            "number": null,
+            "ownTime": 10439,
+            "totalTime": 47170,
+            "targetPath": ":"
+          },
+          {
+            "ownApplication": false,
+            "registrationPoint": "Project.beforeEvaluate",
+            "number": null,
+            "ownTime": 31,
+            "totalTime": 31,
+            "targetPath": ":build-logic"
+          },
+          {
+            "ownApplication": false,
+            "registrationPoint": "Project.beforeEvaluate",
+            "number": null,
+            "ownTime": 0,
+            "totalTime": 0,
+            "targetPath": ":build-logic:convention"
+          }
+        ]
+      },
+      {
+        "type": "other_script",
+        "label": ":build-logic",
+        "displayName": "settings.gradle.kts",
+        "tooltip": null,
+        "targetPath": ":build-logic",
+        "number": null,
+        "ownTime": 47,
+        "totalTime": 47,
+        "stack": [
+          0,
+          1
+        ],
+        "applies": [],
+        "earlyTasksCount": 0,
+        "tasks": [],
+        "contributors": [
+          {
+            "ownApplication": true,
+            "registrationPoint": null,
+            "number": null,
+            "ownTime": 46,
+            "totalTime": 1085,
+            "targetPath": ":build-logic"
+          },
+          {
+            "ownApplication": false,
+            "registrationPoint": "Collection callbacks",
+            "number": null,
+            "ownTime": 1,
+            "totalTime": 1,
+            "targetPath": null
+          }
+        ]
+      }
+    ],
+    "byProjects": [
+      {
+        "projectPath": ":app:app",
+        "ownTime": 37841,
+        "totalTime": 37841,
+        "earlyTasksCount": 2,
+        "codeUnitGroups": [
+          {
+            "type": "project_script",
+            "label": null,
+            "displayName": "app/app/build.gradle.kts",
+            "tooltip": null,
+            "ownTime": 31983,
+            "totalTime": 34724,
+            "applicationCount": 1,
+            "projectCount": 1,
+            "earlyTasksCount": 2,
+            "appliedCodeUnits": [
+              77
+            ]
+          },
+          {
+            "type": "plugin_id",
+            "label": null,
+            "displayName": "awesome.androidapp.plugin",
+            "tooltip": null,
+            "ownTime": 38,
+            "totalTime": 2740,
+            "applicationCount": 1,
+            "projectCount": 1,
+            "earlyTasksCount": 0,
+            "appliedCodeUnits": [
+              88
+            ]
+          }
+        ]
+      },
+      {
+        "projectPath": ":core:account",
+        "ownTime": 37839,
+        "totalTime": 37839,
+        "earlyTasksCount": 0,
+        "codeUnitGroups": [
+          {
+            "type": "project_script",
+            "label": null,
+            "displayName": "core/account/build.gradle.kts",
+            "tooltip": null,
+            "ownTime": 31985,
+            "totalTime": 35373,
+            "applicationCount": 1,
+            "projectCount": 1,
+            "earlyTasksCount": 0,
+            "appliedCodeUnits": [
+              78
+            ]
+          },
+          {
+            "type": "plugin_id",
+            "label": null,
+            "displayName": "awesome.androidlib.plugin",
+            "tooltip": null,
+            "ownTime": 30,
+            "totalTime": 3387,
+            "applicationCount": 1,
+            "projectCount": 1,
+            "earlyTasksCount": 0,
+            "appliedCodeUnits": [
+              86
+            ]
+          }
+        ]
+      }
+    ],
+    "byCodeUnits": [
+      {
+        "type": "plugin_id",
+        "label": null,
+        "displayName": "com.android.internal.library",
+        "tooltip": null,
+        "sumOwnTime": 35827,
+        "sumTotalTime": 38298,
+        "applicationCount": 350,
+        "projectCount": 350,
+        "earlyTasksCount": 0,
+        "appliedCodeUnits": [
+          93,
+          95,
+          1045
+        ]
+      },
+      {
+        "type": "project_script",
+        "label": null,
+        "displayName": "core/account/build.gradle.kts",
+        "tooltip": null,
+        "sumOwnTime": 31985,
+        "sumTotalTime": 35373,
+        "applicationCount": 1,
+        "projectCount": 1,
+        "earlyTasksCount": 0,
+        "appliedCodeUnits": [
+          78
+        ]
+      }
+    ],
+    "__typename": "UiPerformanceConfiguration"
+  }
+}

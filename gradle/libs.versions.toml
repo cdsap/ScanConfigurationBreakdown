@@ -1,0 +1,39 @@
+[versions]
+kotlin = "2.4.20"
+# MUST match the Ktor version the published geapi-data artifact was built against.
+# geapi-data 0.3.3 is compiled against Ktor 2.3.12, where ContentNegotiation is a class;
+# Ktor 3.x replaced it with a top-level property, so forcing 3.x here makes GEClient fail at
+# runtime with NoClassDefFoundError. The library's main branch has moved to Ktor 3.6.0 -- bump
+# this in lockstep when a geapi-data release ships that change.
+ktor = "2.3.12"
+coroutines = "1.11.0"
+serialization = "1.11.0"
+clikt = "5.1.0"
+# Ktor 2.3.12 pulls the slf4j 1.7.x API; the matching no-op binder keeps the CLI output clean.
+slf4j = "1.7.36"
+geapi = "0.3.3"
+# Packages the CLI as a single self-executing file: a shell stub prepended to the fat jar.
+fatbinary = "1.1.0"
+
+[libraries]
+geapi-data = { module = "io.github.cdsap:geapi-data", version.ref = "geapi" }
+
+ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
+ktor-client-cio = { module = "io.ktor:ktor-client-cio", version.ref = "ktor" }
+ktor-client-content-negotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktor" }
+ktor-serialization-json = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor" }
+ktor-client-mock = { module = "io.ktor:ktor-client-mock", version.ref = "ktor" }
+
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serialization" }
+
+clikt = { module = "com.github.ajalt.clikt:clikt", version.ref = "clikt" }
+
+slf4j-nop = { module = "org.slf4j:slf4j-nop", version.ref = "slf4j" }
+
+kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+fatbinary = { id = "io.github.cdsap.fatbinary", version.ref = "fatbinary" }

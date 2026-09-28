@@ -1,0 +1,11 @@
+.gradle/
+.kotlin/
+build/
+# ./gradlew fatBinary writes the executable to the project root.
+/scb
+/scb.sha256
+!gradle/wrapper/gradle-wrapper.jar
+
+.idea/
+*.iml
+.DS_Store
